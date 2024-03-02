@@ -2,18 +2,17 @@
 This script runs the application using a development server.
 It contains the definition of routes and views for the application.
 """
-# Test
+
 from flask import Flask
 app = Flask(__name__)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
 
-# test 2
 @app.route('/')
 def hello():
     """Renders a sample page."""
-    return "Hello World!"
+    return "Dorm Score Freshman"
 
 if __name__ == '__main__':
     import os
